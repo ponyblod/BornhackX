@@ -62,32 +62,35 @@ try:
 
     display.show(pacman_group.group)
 
+    announcer.start()
+    pacman_group.group.pop()
+    pacman_group.append(ghost1.sprite, ghost2.sprite, ghost3.sprite)
+    pacman_group.append(highscore.score_group, announcer.group)
 
     # Game loop
     while True:
-        announcer.start()
-        pacman_group.group.pop()
-        pacman_group.append(ghost1.sprite, ghost2.sprite, ghost3.sprite)
-        pacman_group.append(highscore.score_group, announcer.group)
+        button_value = button_pad.get_value()
+        pacman_character.move(button_value)
 
-        while True:
-            button_value = button_pad.get_value()
-            pacman_character.move(button_value)
-            if cheese.check_victory():
-                announcer.victory()
+        cheese.update()
 
-            cheese.update()
+        if cheese.check_victory():
+            announcer.victory()
 
-            for ghost in ghosts:
-                if ghost.check_collision():
-                    pacman_character.dead()
-                    announcer.dead()
+        for ghost in ghosts:
+            if ghost.check_collision():
+                pacman_character.dead()
+                announcer.dead()
+                break
 
-            for ghost in ghosts:
-                ghost.move()
+        if not pacman_character.alive:
+            break
 
-            # Update time
-            time.sleep(0.01)
+        for ghost in ghosts:
+            ghost.move()
+
+        # Update time
+        time.sleep(0.01)
 
 
 except Exception as ex:

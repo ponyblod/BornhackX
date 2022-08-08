@@ -1,3 +1,4 @@
+import time
 import displayio
 import adafruit_imageload
 from general import transparency
@@ -23,7 +24,7 @@ class PacmanHimself:
     sprite_size: int = 13
     invinsible: bool = False
     invinsible_counter: int = 0
-
+    alive: bool = True
 
 
     def __init__(self, sprite_sheet: str, chosen_map, screen_width: int, screen_height: int):
@@ -129,4 +130,10 @@ class PacmanHimself:
                 if pacman_point == ghost_point:
                     return True
 
-    def dead():
+    def dead(self):
+        for x in range(5,14):
+            self.sprite[0] = x
+            time.sleep(0.1)
+
+        self.alive = False
+

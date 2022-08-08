@@ -8,13 +8,13 @@
 - [X] Make Pacman eat cheese
 - [X] Give cheese score
 - [X] Make Ghost
-- [ ] Make Ghost kill Pacman
-- [ ] Make super cheese
-- [ ] Make Pacman kill ghosts
-- [o] Splash screen
+- [X] Make Ghost kill Pacman
+- [X] Make super cheese
+- [X] Make Pacman kill ghosts
+- [X] Splash screen
     - [X] Ready splash
     - [X] Victory
-    - [ ] Dead
+    - [X] Dead
 - [.] Menu
     - [ ] Play menu
     - [.] Character menu
@@ -27,18 +27,19 @@
         - [ ] Bats
         - [ ] Bugs
     - [ ] Credits menu
-- [ ] Highscore
+- [ ] Score
+- [ ] Saved Highscore
 - [ ] Cherry
 - [ ] Strawberry
 - [ ] Bitcoin
 
-- [o] Make sprite sheet
+- [X] Make sprite sheet
     - [X] For Pacman
-    - [ ] For Ghosts
+    - [X] For Ghosts
     - [X] For cheeses
-- [o] Use sprite sheet
+- [X] Use sprite sheet
     - [X] For Pacman
-    - [ ] For Ghosts
+    - [X] For Ghosts
     - [X] For cheeses
 
 
