@@ -1,0 +1,45 @@
+- [X] Make Pacman
+- [X] Make map
+- [X] Make Ghosts
+- [X] Move Pacman
+    - [X] Make Pacman change direction
+- [X] Constraint Pacman to map
+- [X] Make cheese
+- [X] Make Pacman eat cheese
+- [X] Give cheese score
+- [X] Make Ghost
+- [ ] Make Ghost kill Pacman
+- [ ] Make super cheese
+- [ ] Make Pacman kill ghosts
+- [o] Splash screen
+    - [X] Ready splash
+    - [X] Victory
+    - [ ] Dead
+- [.] Menu
+    - [ ] Play menu
+    - [.] Character menu
+        - [X] Pacman
+        - [ ] Pacwoman
+        - [ ] Tyk
+        - [ ] Tux
+    - [.] Ghost menu
+        - [X] Normal ghosts
+        - [ ] Bats
+        - [ ] Bugs
+    - [ ] Credits menu
+- [ ] Highscore
+- [ ] Cherry
+- [ ] Strawberry
+- [ ] Bitcoin
+
+- [o] Make sprite sheet
+    - [X] For Pacman
+    - [ ] For Ghosts
+    - [X] For cheeses
+- [o] Use sprite sheet
+    - [X] For Pacman
+    - [ ] For Ghosts
+    - [X] For cheeses
+
+
+- [ ] Make meme sprites
